@@ -549,6 +549,18 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <p class="footer-form-text">Підпишіться на розсилку</p>
+          <form class="footer-form-blok" autocomplete="off" novalidate>
+            <label class="footer-form-label-email" for="user_email"></label>
+            <input class="footer-form-input-email" type="email" name="email" placeholder="E-mail" />
+            <button class="footer-form-button-email" type="button">
+              <svg class="footer-form-icon-send" width="24" height="24">
+                <use href="./images/icons.svg#footersend"></use></svg
+              >Підписатися
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -561,6 +573,59 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+
+        <form class="register-form">
+          <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+
+          <div class="register-form-group" role="group">
+            <lable class="register-form-wrap">
+              <span class="register-form-label">Ім'я</span>
+              <input class="register-form-input" type="text" />
+              <svg class="register-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#modalperson"></use>
+              </svg>
+            </lable>
+
+            <lable class="register-form-wrap">
+              <span class="register-form-label">Телефон</span>
+              <input class="register-form-input" type="tel" />
+              <svg class="register-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#modalphon"></use>
+              </svg>
+            </lable>
+
+            <lable class="register-form-wrap">
+              <span class="register-form-label">Пошта</span>
+              <input class="register-form-input" type="email" />
+              <svg class="register-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#modalemail"></use>
+              </svg>
+            </lable>
+
+            <span class="register-form-label">Коментар</span>
+            <textarea
+              class="register-form-message"
+              name=""
+              rows="5"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+
+          <label class="register-form-agreement">
+            <input class="register-checkbox visuaaly-hidden" type="checkbox" name="agreement" />
+            <svg class="register-icon" width="16" height="15">
+              <use class="register-icon-uncheck" href="./images/icons.svg#modalquadro"></use>
+              <use class="register-icon-check" href="./images/icons.svg#modalquadrovector"></use>
+            </svg>
+            <span class="register-form-agreement-text"
+              >Погоджуюся з розсилкою та приймаю<a class="register-form-agreement-link" href=""
+                >Умови договору</a
+              ></span
+            >
+          </label>
+
+          <button class="register-form-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
 
