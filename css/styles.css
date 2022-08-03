@@ -883,18 +883,23 @@ address {
   border-radius: 4px;
 }
 
+.register-form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+
+  transition: fill var(--transition);
+}
+.register-form-icon:hover,
+.register-form-icon:focus {
+  fill: var(--accent-txt-cl);
+}
+
 .register-form-message {
   padding: 12px 16px;
   height: 120px;
   resize: none;
 }
-
-.register-form-icon {
-  position: absolute;
-  bottom: 11px;
-  left: 12px;
-}
-
 /* placeholder :
   font-weight: 400;
   font-size: 12px;
@@ -912,6 +917,9 @@ address {
   margin-bottom: 25px;
 }
 
+.register-icon-uncheck {
+}
+
 .register-checkbox:checked + .register-icon .register-icon-uncheck {
   opacity: 0;
   transition: opacity var(--transition);
@@ -920,7 +928,8 @@ address {
 .register-icon-check {
   opacity: 0;
   fill: var(--btn-txt-cl);
-  background: var(--accent-txt-cl);
+  background-color: var(--accent-txt-cl);
+
   transition: opacity var(--anim-fast);
 }
 .register-checkbox:checked + .register-icon .register-icon-check {
