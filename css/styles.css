@@ -881,6 +881,15 @@ address {
   padding: 11px;
   padding-left: 42px;
   border-radius: 4px;
+
+  transition: border-color var(--transition);
+}
+
+.register-form-input:hover,
+.register-form-input:focus,
+.register-form-message:hover,
+.register-form-message:focus {
+  border-color: var(--accent-txt-cl);
 }
 
 .register-form-icon {
