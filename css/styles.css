@@ -128,6 +128,14 @@ address {
   transition: color var(--transition), background-color var(--transition);
 }
 
+.button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
 .btn:hover,
 .btn:focus {
   color: var(--btn-txt-cl);
@@ -652,9 +660,7 @@ address {
 }
 
 .footer-container-social {
-  display: block;
-
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .footer-social-title {
@@ -734,8 +740,11 @@ address {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  border: none;
 
-  padding: 10px 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
   padding-right: 62px;
 
   font-weight: 700;
@@ -755,7 +764,7 @@ address {
 .footer-form-icon-send {
   position: absolute;
   bottom: 13px;
-  right: 8px;
+  right: 28px;
 
   fill: var(--btn-txt-cl);
 }
@@ -886,10 +895,28 @@ address {
 }
 
 .register-form-input:hover,
-.register-form-input:focus,
+.register-form-input:focus-visible {
+  border: 1px solid var(--accent-txt-cl);
+  outline: none;
+}
+
+.register-form-input:hover + .register-form-icon,
+.register-form-input:focus-visible + .register-form-icon {
+  fill: var(--accent-txt-cl);
+}
+
+/*
+.register-form-icon:hover,
+.register-form-icon:focus {
+  fill: var(--accent-txt-cl);
+  border-color: var(--accent-txt-cl);
+}
+*/
+
 .register-form-message:hover,
 .register-form-message:focus {
   border-color: var(--accent-txt-cl);
+  outline: none;
 }
 
 .register-form-icon {
@@ -898,10 +925,6 @@ address {
   left: 12px;
 
   transition: fill var(--transition);
-}
-.register-form-icon:hover,
-.register-form-icon:focus {
-  fill: var(--accent-txt-cl);
 }
 
 .register-form-message {
