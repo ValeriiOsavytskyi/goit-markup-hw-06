@@ -734,6 +734,7 @@ address {
   border: var(--ftr-form);
   background-color: transparent;
   margin-right: 12px;
+  color: var(--btn-txt-cl);
 }
 
 .footer-form-button-email {
